@@ -3,6 +3,10 @@ const cors = require('cors');
 
 // 导入路由
 const coursesRouter = require('./routes/courses');
+const chaptersRouter = require('./routes/chapters');
+const qaRouter = require('./routes/qa');
+const newsRouter = require('./routes/news');
+const usersRouter = require('./routes/users');
 
 const app = express();
 
@@ -13,6 +17,10 @@ app.use(express.urlencoded({ extended: true }));
 
 // 路由
 app.use('/api/courses', coursesRouter);
+app.use('/api/chapters', chaptersRouter);
+app.use('/api/qa', qaRouter);
+app.use('/api/news', newsRouter);
+app.use('/api/users', usersRouter);
 
 // 测试路由
 app.get('/api/test', (req, res) => {
@@ -31,4 +39,4 @@ app.use((req, res) => {
     });
 });
 
-module.exports = app;  // 确保这行存在
+module.exports = app;
