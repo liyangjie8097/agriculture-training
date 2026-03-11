@@ -7,12 +7,13 @@ const chaptersRouter = require('./routes/chapters');
 const qaRouter = require('./routes/qa');
 const newsRouter = require('./routes/news');
 const usersRouter = require('./routes/users');
+const videoRouter = require('./routes/video');   // 确保这一行存在
 
 const app = express();
 
 // 中间件
-app.use(cors());              // 允许跨域请求
-app.use(express.json());      // 解析 JSON 请求体
+app.use(cors());
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // 路由
@@ -21,6 +22,7 @@ app.use('/api/chapters', chaptersRouter);
 app.use('/api/qa', qaRouter);
 app.use('/api/news', newsRouter);
 app.use('/api/users', usersRouter);
+app.use('/api/video', videoRouter);              // 确保这一行存在
 
 // 测试路由
 app.get('/api/test', (req, res) => {
