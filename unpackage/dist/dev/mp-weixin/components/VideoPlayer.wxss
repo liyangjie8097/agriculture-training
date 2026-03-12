@@ -1,0 +1,113 @@
+
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 深色模式 */
+.video-modal.dark-mode {
+  background-color: rgba(0, 0, 0, 0.98);
+}
+.video-modal-content {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+.video-modal-header {
+  height: 100rpx;
+  background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  border-bottom: 1rpx solid #333;
+  z-index: 10000;
+}
+.video-modal-header.dark-header {
+  background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 100%);
+  border-bottom-color: #444;
+}
+.video-modal-title {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 30rpx;
+}
+.title-text {
+  color: #ffffff;
+  font-size: 28rpx;
+  font-weight: 500;
+  lines: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.video-modal-close {
+  color: #ffffff;
+  font-size: 48rpx;
+  padding: 10rpx;
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30rpx;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.video-modal-body {
+  flex: 1;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-player {
+  width: 100%;
+  height: 100%;
+}
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 40rpx;
+}
+.loading-text {
+  color: #999;
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+  transition: color 0.3s ease;
+}
+.loading-text.dark-text-light {
+  color: #666;
+}
+.error-text {
+  color: #ff6b6b;
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+.error-desc {
+  color: #2b5e2b;
+  font-size: 28rpx;
+  text-decoration: underline;
+  padding: 20rpx;
+  transition: color 0.3s ease;
+}
+.error-desc.dark-error-desc {
+  color: #4CAF50;
+}

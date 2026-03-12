@@ -1,0 +1,446 @@
+
+.feedback-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding-bottom: 30rpx;
+  transition: all 0.3s ease;
+}
+
+/* 深色模式 */
+.feedback-container.dark-mode {
+  background-color: #1a1a1a;
+}
+
+/* 顶部导航栏 */
+.custom-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60rpx 30rpx 20rpx;
+  background-color: #ffffff;
+  border-bottom: 1rpx solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+.custom-navbar.dark-navbar {
+  background-color: #2a2a2a;
+  border-bottom-color: #3a3a3a;
+}
+.nav-left {
+  width: 80rpx;
+}
+.back-icon {
+  font-size: 48rpx;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.back-icon.dark-icon {
+  color: #fff;
+}
+.nav-title {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.nav-title.dark-text {
+  color: #fff;
+}
+.nav-right {
+  width: 80rpx;
+}
+
+/* 表单区域 */
+.form-section {
+  background-color: #ffffff;
+  margin: 30rpx;
+  padding: 30rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.form-section.dark-section {
+  background-color: #2a2a2a;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.3);
+}
+.form-item {
+  margin-bottom: 40rpx;
+  position: relative;
+}
+.form-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+.label-icon {
+  font-size: 32rpx;
+  margin-right: 10rpx;
+  width: 40rpx;
+}
+.label-text {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.label-text.dark-label {
+  color: #fff;
+}
+.picker {
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #f8f8f8;
+  border-radius: 40rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  color: #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.picker.dark-picker {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+.picker-arrow {
+  font-size: 40rpx;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.picker-arrow.dark-arrow {
+  color: #aaa;
+}
+.form-input {
+  height: 80rpx;
+  background-color: #f8f8f8;
+  border-radius: 40rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+.form-input.dark-input {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+.form-input.dark-input::-webkit-input-placeholder {
+  color: #aaa;
+}
+.form-input.dark-input::placeholder {
+  color: #aaa;
+}
+.input-count {
+  position: absolute;
+  right: 20rpx;
+  bottom: -30rpx;
+  font-size: 22rpx;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.input-count.dark-count {
+  color: #aaa;
+}
+.form-textarea {
+  height: 200rpx;
+  background-color: #f8f8f8;
+  border-radius: 20rpx;
+  padding: 20rpx 30rpx;
+  font-size: 28rpx;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+.form-textarea.dark-textarea {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+.form-textarea.dark-textarea::-webkit-input-placeholder {
+  color: #aaa;
+}
+.form-textarea.dark-textarea::placeholder {
+  color: #aaa;
+}
+.textarea-count {
+  position: absolute;
+  right: 20rpx;
+  bottom: -30rpx;
+  font-size: 22rpx;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.textarea-count.dark-count {
+  color: #aaa;
+}
+.input-tip {
+  position: absolute;
+  left: 80rpx;
+  bottom: -30rpx;
+  font-size: 22rpx;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.input-tip.dark-tip {
+  color: #aaa;
+}
+
+/* 上传区域 */
+.upload-section {
+  margin-top: 10rpx;
+}
+.upload-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.upload-item {
+  position: relative;
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+.upload-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12rpx;
+}
+.upload-remove {
+  position: absolute;
+  top: -10rpx;
+  right: -10rpx;
+  width: 40rpx;
+  height: 40rpx;
+  background-color: #f56c6c;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 24rpx;
+}
+.upload-btn {
+  width: 180rpx;
+  height: 180rpx;
+  background-color: #f8f8f8;
+  border: 2rpx dashed #ddd;
+  border-radius: 12rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.upload-btn.dark-upload-btn {
+  background-color: #3a3a3a;
+  border-color: #555;
+}
+.upload-icon {
+  font-size: 60rpx;
+  color: #999;
+  margin-bottom: 10rpx;
+  transition: color 0.3s ease;
+}
+.upload-icon.dark-upload-icon {
+  color: #aaa;
+}
+.upload-text {
+  font-size: 24rpx;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.upload-text.dark-upload-text {
+  color: #aaa;
+}
+.upload-tip {
+  font-size: 22rpx;
+  color: #999;
+  margin-top: 10rpx;
+  display: block;
+  transition: color 0.3s ease;
+}
+.upload-tip.dark-tip {
+  color: #aaa;
+}
+
+/* 提交按钮 */
+.submit-btn {
+  margin: 0 30rpx 40rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: linear-gradient(135deg, #2b5e2b 0%, #1e4b1e 100%);
+  color: #ffffff;
+  font-size: 32rpx;
+  border-radius: 44rpx;
+  border: none;
+  transition: all 0.3s ease;
+}
+.submit-btn::after {
+  border: none;
+}
+.submit-btn[disabled] {
+  opacity: 0.5;
+}
+.submit-btn.dark-btn {
+  background: linear-gradient(135deg, #1e4b1e 0%, #0f2a0f 100%);
+}
+
+/* 历史反馈 */
+.history-section {
+  background-color: #ffffff;
+  margin: 30rpx;
+  padding: 30rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.history-section.dark-section {
+  background-color: #2a2a2a;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.3);
+}
+.section-header {
+  margin-bottom: 30rpx;
+}
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.section-title.dark-text {
+  color: #fff;
+}
+.feedback-card {
+  background-color: #f8f8f8;
+  border-radius: 16rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  transition: all 0.3s ease;
+}
+.feedback-card.dark-feedback-card {
+  background-color: #3a3a3a;
+}
+.feedback-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+.feedback-type {
+  padding: 4rpx 20rpx;
+  border-radius: 30rpx;
+  font-size: 22rpx;
+  color: #ffffff;
+}
+.type-1 { background-color: #2196F3;
+}
+.type-2 { background-color: #FF9800;
+}
+.type-3 { background-color: #F44336;
+}
+.type-4 { background-color: #9C27B0;
+}
+.feedback-status {
+  padding: 4rpx 20rpx;
+  border-radius: 30rpx;
+  font-size: 22rpx;
+}
+.status-0 { background-color: #f0f0f0; color: #666;
+}
+.status-1 { background-color: #e3f2fd; color: #1976D2;
+}
+.status-2 { background-color: #e8f5e8; color: #2b5e2b;
+}
+.status-3 { background-color: #ffebee; color: #c62828;
+}
+.feedback-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+  display: block;
+  transition: color 0.3s ease;
+}
+.feedback-title.dark-text {
+  color: #fff;
+}
+.feedback-content {
+  font-size: 26rpx;
+  color: #666;
+  margin-bottom: 15rpx;
+  display: block;
+  lines: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  transition: color 0.3s ease;
+}
+.feedback-content.dark-content {
+  color: #aaa;
+}
+.feedback-reply {
+  background-color: #ffffff;
+  border-radius: 12rpx;
+  padding: 15rpx;
+  margin-bottom: 15rpx;
+  transition: all 0.3s ease;
+}
+.feedback-reply.dark-reply {
+  background-color: #2a2a2a;
+}
+.reply-label {
+  font-size: 24rpx;
+  color: #2b5e2b;
+  font-weight: 500;
+  margin-right: 10rpx;
+  transition: color 0.3s ease;
+}
+.reply-label.dark-reply-label {
+  color: #4CAF50;
+}
+.reply-content {
+  font-size: 24rpx;
+  color: #666;
+  transition: color 0.3s ease;
+}
+.reply-content.dark-reply-content {
+  color: #aaa;
+}
+.feedback-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.feedback-time {
+  font-size: 22rpx;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.feedback-time.dark-time {
+  color: #aaa;
+}
+
+/* 开发者信息 */
+.dev-info {
+  text-align: center;
+  padding: 30rpx;
+  font-size: 24rpx;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+.dev-info.dark-dev {
+  color: #666;
+}
+
+/* 占位符样式 */
+.dark-placeholder {
+  color: #aaa !important;
+}

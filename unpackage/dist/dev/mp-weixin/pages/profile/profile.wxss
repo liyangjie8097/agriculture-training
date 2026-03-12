@@ -1,0 +1,369 @@
+
+.profile-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding-bottom: 30rpx;
+  transition: all 0.3s ease;
+}
+
+/* 深色模式 */
+.profile-container.dark-mode {
+  background-color: #1a1a1a;
+}
+.header {
+  background: linear-gradient(135deg, #2b5e2b 0%, #1e4b1e 100%);
+  padding: 40rpx 30rpx;
+  color: #ffffff;
+  border-radius: 0 0 40rpx 40rpx;
+  margin-bottom: 30rpx;
+  transition: all 0.3s ease;
+}
+.header.dark-header {
+  background: linear-gradient(135deg, #1e4b1e 0%, #0f2a0f 100%);
+}
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+/* 头像区域 */
+.avatar-section {
+  background-color: #ffffff;
+  margin: 0 30rpx 30rpx;
+  padding: 40rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.avatar-section.dark-section {
+  background-color: #2a2a2a;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.3);
+}
+.avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 80rpx;
+  margin-bottom: 20rpx;
+  border: 4rpx solid #2b5e2b;
+  transition: all 0.3s ease;
+}
+.avatar.dark-avatar {
+  border-color: #4CAF50;
+}
+.avatar-edit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10rpx 30rpx;
+  background-color: #f0f0f0;
+  border-radius: 40rpx;
+  transition: all 0.3s ease;
+}
+.avatar-edit.dark-edit {
+  background-color: #3a3a3a;
+}
+.edit-icon {
+  font-size: 32rpx;
+  margin-right: 10rpx;
+  transition: color 0.3s ease;
+}
+.edit-icon.dark-icon {
+  color: #aaa;
+}
+.edit-text {
+  font-size: 28rpx;
+  color: #666;
+  transition: color 0.3s ease;
+}
+.edit-text.dark-text {
+  color: #aaa;
+}
+
+/* 表单区域 */
+.form-section {
+  background-color: #ffffff;
+  margin: 0 30rpx 30rpx;
+  padding: 30rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.form-section.dark-section {
+  background-color: #2a2a2a;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.3);
+}
+.form-item {
+  margin-bottom: 40rpx;
+  position: relative;
+}
+.form-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+.label-icon {
+  font-size: 32rpx;
+  margin-right: 10rpx;
+  width: 40rpx;
+  transition: color 0.3s ease;
+}
+.label-icon.dark-icon {
+  color: #aaa;
+}
+.label-text {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.label-text.dark-label {
+  color: #fff;
+}
+.form-input {
+  height: 80rpx;
+  background-color: #f8f8f8;
+  border-radius: 40rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+.form-input.dark-input {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+.form-input.dark-input::-webkit-input-placeholder {
+  color: #aaa;
+}
+.form-input.dark-input::placeholder {
+  color: #aaa;
+}
+.form-input[disabled] {
+  background-color: #f0f0f0;
+  color: #999;
+}
+.form-input.dark-input[disabled] {
+  background-color: #3a3a3a;
+  color: #666;
+}
+.input-count {
+  position: absolute;
+  right: 20rpx;
+  bottom: -30rpx;
+  font-size: 22rpx;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.input-count.dark-count {
+  color: #aaa;
+}
+.input-tip {
+  position: absolute;
+  left: 80rpx;
+  bottom: -30rpx;
+  font-size: 22rpx;
+  color: #f5a623;
+  transition: color 0.3s ease;
+}
+.input-tip.dark-tip {
+  color: #ffb74d;
+}
+.phone-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.phone-field {
+  flex: 1;
+  margin-right: 20rpx;
+}
+.verify-btn {
+  width: 180rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background: linear-gradient(135deg, #2b5e2b 0%, #1e4b1e 100%);
+  color: #ffffff;
+  font-size: 26rpx;
+  border-radius: 35rpx;
+  border: none;
+  transition: all 0.3s ease;
+}
+.verify-btn.dark-btn {
+  background: linear-gradient(135deg, #1e4b1e 0%, #0f2a0f 100%);
+}
+.verify-btn[disabled] {
+  background-color: #ccc;
+  color: #999;
+}
+.dark-mode .verify-btn[disabled] {
+  background-color: #3a3a3a;
+  color: #666;
+}
+.verify-btn::after {
+  border: none;
+}
+
+/* 单选按钮组 */
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #f8f8f8;
+  border-radius: 40rpx;
+  padding: 10rpx;
+  transition: all 0.3s ease;
+}
+.radio-group.dark-radio-group {
+  background-color: #3a3a3a;
+}
+.radio-item {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15rpx 0;
+  border-radius: 30rpx;
+  transition: all 0.3s;
+}
+.radio-item.dark-radio {
+  color: #aaa;
+}
+.radio-item.active {
+  background: linear-gradient(135deg, #2b5e2b 0%, #1e4b1e 100%);
+}
+.radio-item.dark-active {
+  background: linear-gradient(135deg, #1e4b1e 0%, #0f2a0f 100%);
+}
+.radio-icon {
+  font-size: 32rpx;
+  margin-right: 8rpx;
+  transition: color 0.3s ease;
+}
+.radio-icon.dark-radio-icon {
+  color: #aaa;
+}
+.radio-text {
+  font-size: 26rpx;
+  transition: color 0.3s ease;
+}
+.radio-text.dark-radio-text {
+  color: #aaa;
+}
+.radio-item.active .radio-icon,
+.radio-item.active .radio-text {
+  color: #ffffff;
+}
+.radio-item.dark-active .radio-icon,
+.radio-item.dark-active .radio-text {
+  color: #fff;
+}
+
+/* 选择器 */
+.picker {
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #f8f8f8;
+  border-radius: 40rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  color: #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.picker.dark-picker {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+.picker-arrow {
+  font-size: 40rpx;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.picker-arrow.dark-arrow {
+  color: #aaa;
+}
+
+/* 文本域 */
+.form-textarea {
+  height: 160rpx;
+  background-color: #f8f8f8;
+  border-radius: 20rpx;
+  padding: 20rpx 30rpx;
+  font-size: 28rpx;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+.form-textarea.dark-textarea {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+.form-textarea.dark-textarea::-webkit-input-placeholder {
+  color: #aaa;
+}
+.form-textarea.dark-textarea::placeholder {
+  color: #aaa;
+}
+.textarea-count {
+  position: absolute;
+  right: 20rpx;
+  bottom: -30rpx;
+  font-size: 22rpx;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.textarea-count.dark-count {
+  color: #aaa;
+}
+
+/* 保存按钮 */
+.save-btn {
+  margin: 0 30rpx 40rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: linear-gradient(135deg, #2b5e2b 0%, #1e4b1e 100%);
+  color: #ffffff;
+  font-size: 32rpx;
+  border-radius: 44rpx;
+  border: none;
+  transition: all 0.3s ease;
+}
+.save-btn::after {
+  border: none;
+}
+.save-btn[disabled] {
+  opacity: 0.5;
+}
+.save-btn.dark-btn {
+  background: linear-gradient(135deg, #1e4b1e 0%, #0f2a0f 100%);
+}
+
+/* 开发者信息 */
+.dev-info {
+  text-align: center;
+  padding: 30rpx;
+  font-size: 24rpx;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+.dev-info.dark-dev {
+  color: #666;
+}
+
+/* 占位符样式 */
+.dark-placeholder {
+  color: #aaa !important;
+}

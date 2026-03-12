@@ -1,0 +1,169 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/course/course",
+      "style": {
+        "navigationBarTitleText": "视频库"
+      }
+    },
+    {
+      "path": "pages/qa/qa",
+      "style": {
+        "navigationBarTitleText": "问答"
+      }
+    },
+    {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/news/news",
+      "style": {
+        "navigationBarTitleText": "资讯"
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/register/register",
+      "style": {
+        "navigationBarTitleText": "注册"
+      }
+    },
+    {
+      "path": "pages/forgot/forgot",
+      "style": {
+        "navigationBarTitleText": "忘记密码"
+      }
+    },
+    {
+      "path": "pages/course-detail/course-detail",
+      "style": {
+        "navigationBarTitleText": "视频详情"
+      }
+    },
+    {
+      "path": "pages/history/history",
+      "style": {
+        "navigationBarTitleText": "学习历史"
+      }
+    },
+    {
+      "path": "pages/search/search",
+      "style": {
+        "navigationBarTitleText": "搜索"
+      }
+    },
+    {
+      "path": "pages/favorites/favorites",
+      "style": {
+        "navigationBarTitleText": "我的收藏"
+      }
+    },
+    {
+      "path": "pages/my-courses/my-courses",
+      "style": {
+        "navigationBarTitleText": "我的视频"
+      }
+    },
+    {
+      "path": "pages/news-detail/news-detail",
+      "style": {
+        "navigationBarTitleText": "资讯详情"
+      }
+    },
+    {
+      "path": "pages/ask/ask",
+      "style": {
+        "navigationBarTitleText": "提问"
+      }
+    },
+    {
+      "path": "pages/qa-detail/qa-detail",
+      "style": {
+        "navigationBarTitleText": "问题详情"
+      }
+    },
+    {
+      "path": "pages/my-questions/my-questions",
+      "style": {
+        "navigationBarTitleText": "我的提问"
+      }
+    },
+    {
+      "path": "pages/message/message",
+      "style": {
+        "navigationBarTitleText": "消息中心"
+      }
+    },
+    {
+      "path": "pages/profile/profile",
+      "style": {
+        "navigationBarTitleText": "个人资料"
+      }
+    },
+    {
+      "path": "pages/about/about",
+      "style": {
+        "navigationBarTitleText": "关于我们",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/feedback/feedback",
+      "style": {
+        "navigationBarTitleText": "意见反馈",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/settings/settings",
+      "style": {
+        "navigationBarTitleText": "设置",
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "农业技能培训",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#07c160",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "text": "视频库"
+      },
+      {
+        "pagePath": "pages/qa/qa",
+        "text": "问答"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"config.js","sources":["config.js"],"sourcesContent":["// config.js\n// 后端服务器公网地址（您的云服务器 IP）\nconst baseUrl = 'http://81.71.93.186:3000/api';\n\nexport default baseUrl;"],"names":[],"mappings":";AAEK,MAAC,UAAU;;"}

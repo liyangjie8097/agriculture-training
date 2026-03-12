@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/course/course",
+    "pages/qa/qa",
+    "pages/my/my",
+    "pages/news/news",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/forgot/forgot",
+    "pages/course-detail/course-detail",
+    "pages/history/history",
+    "pages/search/search",
+    "pages/favorites/favorites",
+    "pages/my-courses/my-courses",
+    "pages/news-detail/news-detail",
+    "pages/ask/ask",
+    "pages/qa-detail/qa-detail",
+    "pages/my-questions/my-questions",
+    "pages/message/message",
+    "pages/profile/profile",
+    "pages/about/about",
+    "pages/feedback/feedback",
+    "pages/settings/settings"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "农业技能培训",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#07c160",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "text": "视频库"
+      },
+      {
+        "pagePath": "pages/qa/qa",
+        "text": "问答"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "usingComponents": {}
+}

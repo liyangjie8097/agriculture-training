@@ -1,0 +1,362 @@
+
+.message-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding-bottom: 100rpx;
+  transition: all 0.3s ease;
+}
+
+/* 深色模式 */
+.message-container.dark-mode {
+  background-color: #1a1a1a;
+}
+.header {
+  background: linear-gradient(135deg, #2b5e2b 0%, #1e4b1e 100%);
+  padding: 40rpx 30rpx;
+  color: #ffffff;
+  border-radius: 0 0 40rpx 40rpx;
+  margin-bottom: 30rpx;
+  transition: all 0.3s ease;
+}
+.header.dark-header {
+  background: linear-gradient(135deg, #1e4b1e 0%, #0f2a0f 100%);
+}
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+/* 分类标签 */
+.tab-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  padding: 20rpx;
+  margin: 0 30rpx 20rpx 30rpx;
+  border-radius: 50rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: all 0.3s ease;
+}
+.tab-bar.dark-tab-bar {
+  background-color: #2a2a2a;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.3);
+}
+.tab-item {
+  flex: 1;
+  text-align: center;
+  padding: 15rpx 0;
+  font-size: 26rpx;
+  color: #666;
+  border-radius: 40rpx;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.tab-item.dark-tab-item {
+  color: #aaa;
+}
+.tab-item.active {
+  background: linear-gradient(135deg, #2b5e2b 0%, #1e4b1e 100%);
+  color: #ffffff;
+  font-weight: 500;
+}
+.tab-item.dark-active {
+  background: linear-gradient(135deg, #1e4b1e 0%, #0f2a0f 100%);
+  color: #fff;
+}
+.badge {
+  position: absolute;
+  top: -10rpx;
+  right: 10rpx;
+  min-width: 30rpx;
+  height: 30rpx;
+  background-color: #f56c6c;
+  color: #ffffff;
+  font-size: 20rpx;
+  border-radius: 15rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6rpx;
+}
+
+/* 消息列表 */
+.message-list-scroll {
+  height: calc(100vh - 300rpx);
+}
+.message-list {
+  padding: 0 30rpx;
+}
+.all-read-tip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+.tip-icon {
+  font-size: 100rpx;
+  margin-bottom: 20rpx;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+.tip-icon.dark-tip-icon {
+  opacity: 0.2;
+}
+.tip-text {
+  font-size: 30rpx;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.tip-text.dark-tip-text {
+  color: #666;
+}
+.message-card {
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+.message-card.dark-card {
+  background-color: #2a2a2a;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.3);
+}
+.message-card.unread {
+  background-color: #f0f9f0;
+  border-left: 8rpx solid #2b5e2b;
+}
+.message-card.dark-unread {
+  background-color: #1e3a1e;
+  border-left-color: #4CAF50;
+}
+.message-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+  margin-right: 20rpx;
+  transition: all 0.3s ease;
+}
+.message-icon.dark-icon {
+  filter: brightness(0.9);
+}
+.icon-system {
+  background-color: #e8f5e8;
+  color: #2b5e2b;
+}
+.icon-interact {
+  background-color: #fff3e0;
+  color: #FF9800;
+}
+.icon-comment {
+  background-color: #e3f2fd;
+  color: #2196F3;
+}
+.icon-like {
+  background-color: #ffebee;
+  color: #F44336;
+}
+.message-content {
+  flex: 1;
+  padding-right: 50rpx;
+}
+.message-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.message-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+  flex: 1;
+  margin-right: 20rpx;
+  transition: color 0.3s ease;
+}
+.message-title.dark-text {
+  color: #fff;
+}
+.message-time {
+  font-size: 22rpx;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.message-time.dark-time {
+  color: #666;
+}
+.message-desc {
+  font-size: 26rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+  lines: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  transition: color 0.3s ease;
+}
+.message-desc.dark-desc {
+  color: #aaa;
+}
+.message-extra {
+  background-color: #f8f8f8;
+  border-radius: 12rpx;
+  padding: 15rpx;
+  margin-top: 10rpx;
+  transition: all 0.3s ease;
+}
+.message-extra.dark-extra {
+  background-color: #3a3a3a;
+}
+.extra-text {
+  font-size: 24rpx;
+  color: #999;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+.extra-text.dark-extra-text {
+  color: #aaa;
+}
+.unread-dot {
+  position: absolute;
+  top: 30rpx;
+  right: 80rpx;
+  width: 16rpx;
+  height: 16rpx;
+  background-color: #f56c6c;
+  border-radius: 8rpx;
+}
+.delete-btn {
+  position: absolute;
+  top: 30rpx;
+  right: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.delete-btn.dark-delete-btn {
+  opacity: 0.3;
+}
+.delete-icon {
+  font-size: 32rpx;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.delete-icon.dark-delete-icon {
+  color: #aaa;
+}
+
+/* 底部操作栏 */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  padding: 20rpx 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1rpx solid #eee;
+  box-shadow: 0 -2rpx 10rpx rgba(0, 0, 0, 0.05);
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+.bottom-bar.dark-bottom-bar {
+  background-color: #2a2a2a;
+  border-top-color: #3a3a3a;
+  box-shadow: 0 -2rpx 10rpx rgba(0, 0, 0, 0.3);
+}
+.bottom-left, .bottom-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15rpx 50rpx;
+  border-radius: 40rpx;
+  transition: all 0.3s ease;
+}
+.bottom-left {
+  background-color: #e8f5e8;
+}
+.bottom-left.dark-bottom-left {
+  background-color: #1e3a1e;
+}
+.bottom-right {
+  background-color: #ffebee;
+}
+.bottom-right.dark-bottom-right {
+  background-color: #4a1e1e;
+}
+.mark-icon, .clear-icon {
+  font-size: 32rpx;
+  margin-right: 10rpx;
+  transition: color 0.3s ease;
+}
+.mark-icon {
+  color: #2b5e2b;
+}
+.mark-icon.dark-mark-icon {
+  color: #4CAF50;
+}
+.clear-icon {
+  color: #f56c6c;
+}
+.clear-icon.dark-clear-icon {
+  color: #ef5350;
+}
+.mark-text {
+  font-size: 28rpx;
+  color: #2b5e2b;
+  transition: color 0.3s ease;
+}
+.mark-text.dark-mark-text {
+  color: #4CAF50;
+}
+.clear-text {
+  font-size: 28rpx;
+  color: #f56c6c;
+  transition: color 0.3s ease;
+}
+.clear-text.dark-clear-text {
+  color: #ef5350;
+}
+.load-more, .no-more {
+  text-align: center;
+  padding: 30rpx 0;
+  font-size: 26rpx;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.load-more.dark-load-text,
+.no-more.dark-no-more {
+  color: #666;
+}
+.dev-info {
+  text-align: center;
+  padding: 20rpx;
+  font-size: 24rpx;
+  color: #ccc;
+  background-color: #f5f5f5;
+  transition: all 0.3s ease;
+}
+.dev-info.dark-dev {
+  color: #666;
+  background-color: #2a2a2a;
+}
