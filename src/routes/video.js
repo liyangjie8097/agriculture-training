@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const axios = require('axios'); // 必须添加这行
+const axios = require('axios');
 const VideoAggregator = require('../services/videoAdapter');
 require('dotenv').config();
 
@@ -97,18 +97,20 @@ router.get('/refresh', async (req, res) => {
   }
 });
 
-// ==================== 热门视频接口 ====================
+// ==================== 热门视频接口（修改为直接查数据库）====================
 router.get('/hot', async (req, res) => {
   try {
     console.log('获取热门视频');
     
-    const videos = await aggregator.getHotVideos();
-
-    console.log(`获取到 ${videos.length} 个热门视频`);
+    // 直接使用数据库连接
+    const pool = require('../config/db');
+    const [rows] = await pool.query('SELECT * FROM videos ORDER BY playCount DESC LIMIT 20');
+    
+    console.log(`获取到 ${rows.length} 个热门视频`);
 
     res.json({
       success: true,
-      data: videos.slice(0, 20)
+      data: rows
     });
 
   } catch (error) {
